@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.itm.palm_scanner_gimmick" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>scan tangan pinrang</name>
+    <description>
+        Aplikasi palm scanner gimmick untuk acara ulang tahun pinrang
+    </description>
+    <author email="dev.itmilenial@gmail.com" href="http://itmilenial.com">
+        itmilenial.com
+    </author>
+    <content src="index.html" />
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="https://itmilenial.com/" />
+    <allow-navigation href="http://itmilenial.com/" />
+    <allow-navigation href="http://*" />
+    <allow-navigation href="http://*/*" />
+    <allow-navigation href="https://*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="data:*" />
+    <allow-navigation href="data:*" />
+
+    <allow-intent href="http://itmilenial.com/" />
+    <allow-intent href="https://itmilenial.com/" />
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="pgb-builder-version" value="1" />
+    <preference name="permissions" value="none" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+
+    <preference name="target-device" value="universal" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="orientation" value="portrait" />
+
+
+    <plugin name="cordova-plugin-whitelist" />
+    <plugin name="cordova-plugin-console" />
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-screen-orientation" />
+    <plugin name="cordova-plugin-vibration" />
+    <plugin name="cordova-plugin-network-information"/>
+    <plugin name="cordova-plugin-inappbrowser" spec="3.1.0" />
+    <plugin name="cordova-plugin-insomnia-android" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="icon/icon.png" density="ldpi" />
+        <icon src="icon/icon.png" density="mdpi" />
+        <icon src="icon/icon.png" density="hdpi" />
+        <icon src="icon/icon.png" density="xhdpi" />
+        <icon src="icon/icon.png" density="xxhdpi" />
+        <icon src="icon/icon.png" density="xxxhdpi" />
+    </platform>
+
+</widget>

@@ -1,0 +1,28 @@
+
+  <div class="page no-toolbar no-navbar" data-name="home">
+    <div class="page-content login-screen-content d-flex align-items-center" style="height: 100vh; background-color: #fff; width: 100%;">
+      <video id="my-video" class="video-js w-100" autoplay="" poster="">
+        <source src="video/palm scanner.mp4" type="video/mp4">
+      </video>
+    </div> <!-- end page-content -->
+  </div>
+
+  <script>
+    return{
+      on: {
+        pageInit: function(){
+          console.log("hahj");
+          var self = this;
+          var myVideo = document.getElementById("my-video"); 
+          $$('.page-content').on('click', function(){
+            if (myVideo.paused){
+              myVideo.play();
+            }else{
+              myVideo.pause(); 
+            } 
+          });
+
+        }
+      }
+    }
+  </script>

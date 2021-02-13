@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *">
+  <!-- <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; media-src *; frame-src *"> -->
+
+  <title>Palm Scanner</title>
+  <link rel="stylesheet" href="modules/f7/css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/helper.css">
+  <link rel="apple-touch-icon" href="assets/img/f7-icon-square.png">
+  <link rel="icon" href="assets/img/f7-icon.png">
+  <style type="text/css">
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    .bg-login:after{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 40vh;
+      background: url('assets/img/background/undraw_informed_decision_p2lh.svg') !important; 
+      background-position: center;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      z-index: 0;
+      opacity: 0.1;
+    }
+
+/*:root {
+  --f7-theme-color: #4cd964;
+  --f7-theme-color-rgb: 76, 217, 100;
+  --f7-theme-color-shade: #2cd048;
+  --f7-theme-color-tint: #6ee081;
+}
+:root,
+:root.theme-dark,
+:root .theme-dark {
+  --f7-bars-bg-color: var(--f7-theme-color);
+  --f7-bars-bg-color-rgb: var(--f7-theme-color-rgb);
+  --f7-bars-translucent-opacity: 0.9;
+  --f7-bars-text-color: #fff;
+  --f7-bars-link-color: #fff;
+  --f7-navbar-subtitle-text-color: rgba(255,255,255,0.85);
+  --f7-bars-border-color: transparent;
+  --f7-tabbar-link-active-color: #fff;
+  --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
+  --f7-sheet-border-color: transparent;
+  --f7-tabbar-link-active-border-color: #fff;
+}
+.appbar,
+.navbar,
+.toolbar,
+.subnavbar,
+.calendar-header,
+.calendar-footer {
+  --f7-touch-ripple-color: var(--f7-touch-ripple-white);
+  --f7-link-highlight-color: var(--f7-link-highlight-white);
+  --f7-button-text-color: #fff;
+  --f7-button-pressed-bg-color: rgba(255,255,255,0.1);
+}
+.navbar-large-transparent,
+.navbar-large.navbar-transparent {
+  --f7-navbar-large-title-text-color: #000;
+
+  --r: 76;
+  --g: 217;
+  --b: 100;
+  --progress: var(--f7-navbar-large-collapse-progress);
+  --f7-bars-link-color: rgb(
+    calc(var(--r) + (255 - var(--r)) * var(--progress)),
+    calc(var(--g) + (255 - var(--g)) * var(--progress)),
+    calc(var(--b) + (255 - var(--b)) * var(--progress))
+  );
+}
+.theme-dark .navbar-large-transparent,
+.theme-dark .navbar-large.navbar-transparent {
+  --f7-navbar-large-title-text-color: #fff;
+}*/
+  </style>
+</head>
+<body>
+  <div id="app" class="color-theme-green">
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+
+      <div class="page no-toolbar no-navbar no-swipeback login-screen-page" data-name="home">
+        <div class="page-content login-screen-content d-flex align-items-center bg-black" style="height: 100vh; width: 100%;">
+          <video id="my-video" class="video-js w-100" poster="" >
+            <source src="video/palm scanner.mp4" type="video/mp4">
+          </video>
+        </div> <!-- end page-content -->
+      </div>
+      
+    </div>
+  </div>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="modules/f7/js/framework7.bundle.min.js"></script>
+  <script src="assets/js/routes.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
